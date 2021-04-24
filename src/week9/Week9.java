@@ -49,12 +49,18 @@ class Task1 {
         return count;
     }
 
-    public int subString(String s, String sub) {
-
-        return 0;
-    }
+    public static Boolean FindString(String Sub){
+        Boolean flag=false;
+        if(Sub.contains("the")){
+            flag=true;
+         System.out.println("Your String contain String the");   
+        }
+        else{
+            System.out.println("Your String donot contain the");
+        }    
+        return flag;
+    }  
 }
-
 class Task2 {
 
     String dispVeritcal(String Data) {
@@ -178,6 +184,7 @@ public class Week9 {
                     a.wordCounter(s);
                     a.vowelCounter(s);
                     a.puncCount(s);
+                    a. FindString(s);
                     break;
                 case 2:
                     Scanner input1 = new Scanner(System.in);
