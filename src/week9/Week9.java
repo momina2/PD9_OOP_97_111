@@ -167,8 +167,16 @@ class MyString extends Task1 {
            System.out.println("Your program donot contain"+ a +"String");
        }
    }
+   void  EqualSting(String a, String B){
+     if(a.equals(B)) {
+         System.out.println("Your "+ a + " is equal to " +B );
+     } 
+     else
+     {
+         System.out.println("Your string 1 isnot equal to string 2");
+     }
+   }
 }
-
 public class Week9 {
 
     /**
@@ -244,7 +252,7 @@ public class Week9 {
                     int decide2;
                     do {
                         System.out.println("1.Count Spaces\n2.Compare Strings\n3.Case Converter \n4.Duplicate Characters"
-                                + "\n5.FingAnother String \n8.EXIT \nchoose yout input:");
+                                + "\n5.FingAnother String \n6.EqualStrig \n8.EXIT \nchoose yout input:");
 
                         Scanner input3 = new Scanner(System.in);
                         decide2 = in.nextInt();
@@ -289,6 +297,18 @@ public class Week9 {
                                 System.out.println("Input String 2");
                                 F=input3.nextLine();
                                 d.FindSubString(E , F);
+                                System.out.println("\n");
+                                break;
+                            case 6:
+                                String G;
+                                String H;
+                                   System.out.println("enter your String 1:");
+                                   G=input3.nextLine();
+                                   System.out.println("Enter your String 2:");
+                                   H=input3.nextLine();
+                                   d.EqualSting(G, H);
+                                   System.out.println("\n");
+                                   break;
                             case 8:
                                 System.out.println("\nExit Program\n\n");
                                 break;
