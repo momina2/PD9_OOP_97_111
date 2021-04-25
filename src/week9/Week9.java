@@ -159,6 +159,14 @@ class MyString extends Task1 {
             }
         }
     }
+   void FindSubString(String s,String a){
+       if(s.contains(a)){
+           System.out.println("Your String 1 have" + a+ "String");
+       }
+       else{
+           System.out.println("Your program donot contain"+ a +"String");
+       }
+   }
 }
 
 public class Week9 {
@@ -235,7 +243,8 @@ public class Week9 {
                 case 4:
                     int decide2;
                     do {
-                        System.out.println("1.Count Spaces\n2.Compare Strings\n3.Case Converter \n4.Duplicate Characters\n8.EXIT \nchoose yout input:");
+                        System.out.println("1.Count Spaces\n2.Compare Strings\n3.Case Converter \n4.Duplicate Characters"
+                                + "\n5.FingAnother String \n8.EXIT \nchoose yout input:");
 
                         Scanner input3 = new Scanner(System.in);
                         decide2 = in.nextInt();
@@ -271,8 +280,15 @@ public class Week9 {
                                 D = input3.nextLine();
                                 d.DuplicateStr(D);
                                 System.out.print("\n");
-
                                 break;
+                            case 5:
+                                String E;
+                                String F;
+                                System.out.println("Input String 1");
+                                E=input3.nextLine();
+                                System.out.println("Input String 2");
+                                F=input3.nextLine();
+                                d.FindSubString(E , F);
                             case 8:
                                 System.out.println("\nExit Program\n\n");
                                 break;
