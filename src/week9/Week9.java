@@ -176,6 +176,14 @@ class MyString extends Task1 {
          System.out.println("Your string 1 isnot equal to string 2");
      }
    }
+   void EmptyString(String A){
+       if(A.isEmpty()){
+           System.out.println("Your String is empty");
+       }
+       else{
+            System.out.println("YOur String is not empty");
+       }
+   }
 }
 public class Week9 {
 
@@ -252,7 +260,7 @@ public class Week9 {
                     int decide2;
                     do {
                         System.out.println("1.Count Spaces\n2.Compare Strings\n3.Case Converter \n4.Duplicate Characters"
-                                + "\n5.FingAnother String \n6.EqualStrig \n8.EXIT \nchoose yout input:");
+                                + "\n5.FingAnother String \n6.EqualStrig \n7. Empty String\n8.EXIT \nchoose yout input:");
 
                         Scanner input3 = new Scanner(System.in);
                         decide2 = in.nextInt();
@@ -309,6 +317,13 @@ public class Week9 {
                                    d.EqualSting(G, H);
                                    System.out.println("\n");
                                    break;
+                            case 7:
+                                String I;
+                                System.out.println("Enter Your String :");
+                                I=input3.nextLine();
+                                d.EmptyString(I);
+                                System.out.println("\n");
+                                break;
                             case 8:
                                 System.out.println("\nExit Program\n\n");
                                 break;
